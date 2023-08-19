@@ -8,7 +8,7 @@ It's an alternative to using a load-balancer/reverse-proxy to perform a failover
 
 Many times a central endpoint is a better solution - but if it is a high-traffic or low-latency application it might be smarter to send the traffic directly to the target node.
 
-<img src="https://github.com/superstes/nftables_addon_dns/blob/latest/docs/failover.png" alt="Failover - Proxy/LB vs direct" width="600"/>
+<img src="https://github.com/superstes/nftables_addon_failover/blob/latest/docs/failover.png" alt="Failover - Proxy/LB vs direct" width="600"/>
 
 Currently only TCP port-checks are supported.
 
