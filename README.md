@@ -19,7 +19,7 @@ Currently only TCP port-checks are supported.
 * [DNS](https://github.com/superstes/nftables_addon_dns)
 * [IPLists](https://github.com/superstes/nftables_addon_iplist)
 
-NFTables documentation: [wiki.superstes.eu](https://wiki.superstes.eu/en/latest/1/network/nftables.html)
+NFTables documentation: [wiki.superstes.eu](https://wiki.superstes.eu/en/latest/1/network/firewall_nftables.html)
 
 If you use other addons - use the `util.py` from this one. It has some additional functions defined!
 
