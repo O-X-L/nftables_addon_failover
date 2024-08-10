@@ -184,3 +184,9 @@ Here you can find an Ansible Role to manage NFTables Addons:
 
 * [ansibleguy.addons_nftables](https://github.com/ansibleguy/addons_nftables)
 * [examples](https://github.com/ansibleguy/addons_nftables/blob/latest/Example.md)
+
+----
+
+## License
+
+MIT
