@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# Source: https://github.com/O-X-L/nftables_addon_failover
+# Copyright (C) 2024 Rath Pascal
+# License: MIT
+
 from socket import socket, AF_INET, AF_INET6, SOCK_STREAM
 
 from util import validate_and_write, load_config, format_var, ensure_list
