@@ -16,10 +16,10 @@ Currently only TCP port-checks are supported.
 
 ## Other Addons
 
-* [DNS](https://github.com/superstes/nftables_addon_dns)
-* [IPLists](https://github.com/superstes/nftables_addon_iplist)
+* [DNS](https://github.com/O-X-L/nftables_addon_dns)
+* [IPLists](https://github.com/O-X-L/nftables_addon_iplist)
 
-NFTables documentation: [wiki.superstes.eu](https://wiki.superstes.eu/en/latest/1/network/firewall_nftables.html)
+NFTables documentation: [docs.o-x-l.com](https://docs.o-x-l.com/firewall/nftables.html)
 
 If you use other addons - use the `util.py` from this one. It has some additional functions defined!
 
