@@ -21,7 +21,34 @@ Currently only TCP port-checks are supported.
 
 NFTables documentation: [docs.o-x-l.com](https://docs.o-x-l.com/firewall/nftables.html)
 
-If you use other addons - use the `util.py` from this one. It has some additional functions defined!
+----
+
+## Install
+
+* Create directories:
+
+   ```bash
+   mkdir -p /var/local/lib/nftables_addons /etc/nftables.d/addons/
+   ```
+
+* Add the script-files:
+
+   * [util.py](https://github.com/O-X-L/nftables_addon_dns/blob/latest/lib/util.py)
+   * [iplist.py](https://github.com/O-X-L/nftables_addon_failover/blob/latest/lib/failover.py)
+
+* Add the config file:
+
+   `/etc/nftables.d/addons/failover.json`
+
+* Optional: Create a service user
+
+   * Add sudoers privileges
+   * Allow to read lib-dir
+   * Allow to write to addons-config-dir
+
+* Add cron or systemd-timer to execute the script on a schedule: `python3 /var/local/lib/nftables_addons/failover.py`
+
+* Test it and verify it's working as expected
 
 ----
 
@@ -81,7 +108,7 @@ cat /etc/nftables.d/addons/failover.nft
 
 2. The script is executed
 
-    `python3 /usr/lib/nftables/failover.py`
+    `python3 /var/local/lib/nftables_addons/failover.py`
 
   * It will load the configuration
   * Run port-checks for all configured variables - use first host that is online
