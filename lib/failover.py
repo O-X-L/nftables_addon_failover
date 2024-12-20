@@ -51,7 +51,6 @@ for var, data in CONFIG.items():
                     name=var,
                     data=[],
                     version=proto_version,
-                    as_set=False,
                 )
             )
             continue
@@ -72,7 +71,6 @@ for var, data in CONFIG.items():
                         name=var,
                         data=[values[idx]],
                         version=proto_version,
-                        as_set=False,
                     )
                 )
                 vars_defined.append(proto_var)
@@ -85,7 +83,6 @@ for var, data in CONFIG.items():
                     data=[],
                     version=proto_version,
                     fallback=values[0],
-                    as_set=False,
                 )
             )
 
