@@ -11,9 +11,7 @@ from util import validate_and_write, load_config, format_var, ensure_list
 PROCESS_IPv6 = True
 
 # paths are set in util (shared between addons)
-CONFIG_FILE = 'failover.json'
-CONFIG_FILE_KEY = 'failover'
-OUT_FILE = 'failover.nft'
+KEY = 'failover'
 TIMEOUT = 2  # sec
 PROCESS_PROTOS = ['ip4']
 if PROCESS_IPv6:
@@ -28,10 +26,10 @@ def _is_reachable(ip: str, port: (str, int), ip_proto: str) -> bool:
         return s.connect_ex((ip, port)) == 0
 
 
-CONFIG = load_config(file=CONFIG_FILE, key=CONFIG_FILE_KEY)
+CONFIG = load_config(KEY)
 
 if CONFIG is None or len(CONFIG) == 0:
-    raise SystemExit(f"Config file could not be loaded: '{CONFIG_FILE}'!")
+    raise SystemExit('Failover Config-file could not be loaded!')
 
 
 lines = []
@@ -86,4 +84,4 @@ for var, data in CONFIG.items():
                 )
             )
 
-validate_and_write(lines=lines, file=OUT_FILE, key=CONFIG_FILE_KEY)
+validate_and_write(lines=lines, key=KEY)
