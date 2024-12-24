@@ -12,14 +12,9 @@ Many times a central endpoint is a better solution - but if it is a high-traffic
 
 Currently only TCP port-checks are supported.
 
-----
-
-## Other Addons
-
-* [DNS](https://github.com/O-X-L/nftables_addon_dns)
-* [IPLists](https://github.com/O-X-L/nftables_addon_iplist)
-
-NFTables documentation: [docs.o-x-l.com](https://docs.o-x-l.com/firewall/nftables.html)
+Links: [NFTables Documentation](https://docs.o-x-l.com/firewall/nftables.html) |
+[Addon for DNS-Resolution](https://github.com/O-X-L/nftables_addon_dns) |
+[Addon for IP-Lists](https://github.com/O-X-L/nftables_addon_iplist)
 
 ----
 
